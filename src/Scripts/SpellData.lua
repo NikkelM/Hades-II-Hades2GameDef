@@ -4,25 +4,25 @@ local game = {}
 ---@class game-Scripts-SpellData*SpellChargeData
 
 ---@type game-Scripts-SpellData*SpellChargeData
-game.SpellChargeData = {}
+game.SpellChargeData = ...
 ---@alias game-Scripts-SpellData.SpellChargeData ...
 
 ---@class game-Scripts-SpellData*SpellData
 
 ---@type game-Scripts-SpellData*SpellData
-game.SpellData = {}
+game.SpellData = ...
 ---@alias game-Scripts-SpellData.SpellData ...
 
 ---@class game-Scripts-SpellData*SpellDisplayData
 
 ---@type game-Scripts-SpellData*SpellDisplayData
-game.SpellDisplayData = {}
+game.SpellDisplayData = ...
 ---@alias game-Scripts-SpellData.SpellDisplayData ...
 
 ---@class game-Scripts-SpellData*SpellTalentData
 
 ---@type game-Scripts-SpellData*SpellTalentData
-game.SpellTalentData = {}
+game.SpellTalentData = ...
 ---@alias game-Scripts-SpellData.SpellTalentData ...
 
 return game

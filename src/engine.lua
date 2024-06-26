@@ -1,21 +1,6 @@
 ---@meta game-engine
 local game = {}
 
-game._VERSION = "Lua 5.2"
----@alias game-engine._VERSION ...
-
----@class game-engine*_G
-
----@type game-engine*_G
-game._G = game
----@alias game-engine._G ...
-
-function game._rom_error(...) end
----@alias game-engine._rom_error ...
-
-function game._rom_tostring(...) end
----@alias game-engine._rom_tostring ...
-
 function game.Activate(...) end
 ---@alias game-engine.Activate ...
 

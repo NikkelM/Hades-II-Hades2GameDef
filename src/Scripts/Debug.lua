@@ -4,19 +4,19 @@ local game = {}
 ---@class game-Scripts-Debug*DebugState
 
 ---@type game-Scripts-Debug*DebugState
-game.DebugState = {}
+game.DebugState = ...
 ---@alias game-Scripts-Debug.DebugState ...
 
 ---@class game-Scripts-Debug*HotLoadInfo
 
 ---@type game-Scripts-Debug*HotLoadInfo
-game.HotLoadInfo = {}
+game.HotLoadInfo = ...
 ---@alias game-Scripts-Debug.HotLoadInfo ...
 
 ---@class game-Scripts-Debug*UserDebugEquip
 
 ---@type game-Scripts-Debug*UserDebugEquip
-game.UserDebugEquip = {}
+game.UserDebugEquip = ...
 ---@alias game-Scripts-Debug.UserDebugEquip ...
 
 function game.AnimateOnDistance(a, b) end

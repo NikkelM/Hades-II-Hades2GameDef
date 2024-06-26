@@ -4,7 +4,7 @@ local game = {}
 ---@class game-Scripts-AchievementLogic*SessionAchivementUnlocks
 
 ---@type game-Scripts-AchievementLogic*SessionAchivementUnlocks
-game.SessionAchivementUnlocks = {}
+game.SessionAchivementUnlocks = ...
 ---@alias game-Scripts-AchievementLogic.SessionAchivementUnlocks ...
 
 function game.CheckAchievement(a) end

@@ -8,6 +8,7 @@ output = 'globals.lua'
 base = 'base.lua'
 engine = 'engine.lua'
 load = 'load.lua'
+rom = 'rom.lua'
 scripts = 'Scripts'
 decl = compile(r'---@(alias|class|type|see) game-')
 repl = r'---@\1 game-'
@@ -18,6 +19,20 @@ with open(output,'w') as defs:
         defs.write('---@meta game\n')
         defs_auto.write('---@meta game-import\n')
         defs.write('local game = {}\n')
+        with open(rom,'r') as file:
+            defs.write('\n-- ReturnOfModding/Hell2Modding')
+            defs_auto.write('\n-- ReturnOfModding/Hell2Modding')
+            lines = []
+            lines_auto = []
+            for line in file:
+                line = decl.sub(repl,line)
+                lines.append(line)
+                if not auto_skip.search(line):
+                    lines_auto.append(line.replace('game.',''))
+            lines = lines[2:-2]
+            lines_auto = lines_auto[2:-2]
+            defs.write(''.join(lines))
+            defs_auto.write((''.join(lines_auto)).replace('\n\n\n','\n\n'))
         with open(base,'r') as file:
             defs.write('\n-- Base')
             defs_auto.write('\n-- Base')

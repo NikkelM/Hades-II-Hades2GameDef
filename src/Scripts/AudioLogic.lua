@@ -4,7 +4,7 @@ local game = {}
 ---@class game-Scripts-AudioLogic*AudioState
 
 ---@type game-Scripts-AudioLogic*AudioState
-game.AudioState = {}
+game.AudioState = ...
 ---@alias game-Scripts-AudioLogic.AudioState ...
 
 function game.AudioStateInit(a) end

@@ -4,31 +4,31 @@ local game = {}
 ---@class game-Scripts-RunData*GlobalTextLines
 
 ---@type game-Scripts-RunData*GlobalTextLines
-game.GlobalTextLines = {}
+game.GlobalTextLines = ...
 ---@alias game-Scripts-RunData.GlobalTextLines ...
 
 ---@class game-Scripts-RunData*MetaUpgradeCardUpgradeData
 
 ---@type game-Scripts-RunData*MetaUpgradeCardUpgradeData
-game.MetaUpgradeCardUpgradeData = {}
+game.MetaUpgradeCardUpgradeData = ...
 ---@alias game-Scripts-RunData.MetaUpgradeCardUpgradeData ...
 
 ---@class game-Scripts-RunData*PropertyOrderingValuesLookup
 
 ---@type game-Scripts-RunData*PropertyOrderingValuesLookup
-game.PropertyOrderingValuesLookup = {}
+game.PropertyOrderingValuesLookup = ...
 ---@alias game-Scripts-RunData.PropertyOrderingValuesLookup ...
 
 ---@class game-Scripts-RunData*TextLinesCache
 
 ---@type game-Scripts-RunData*TextLinesCache
-game.TextLinesCache = {}
+game.TextLinesCache = ...
 ---@alias game-Scripts-RunData.TextLinesCache ...
 
 ---@class game-Scripts-RunData*WeaponSetLookups
 
 ---@type game-Scripts-RunData*WeaponSetLookups
-game.WeaponSetLookups = {}
+game.WeaponSetLookups = ...
 ---@alias game-Scripts-RunData.WeaponSetLookups ...
 
 function game.AddFormattedPercentageChangeValues(a, b) end

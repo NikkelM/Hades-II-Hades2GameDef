@@ -4,7 +4,7 @@ local game = {}
 ---@class game-Scripts-QuestData*QuestData
 
 ---@type game-Scripts-QuestData*QuestData
-game.QuestData = {}
+game.QuestData = ...
 ---@alias game-Scripts-QuestData.QuestData ...
 
 return game

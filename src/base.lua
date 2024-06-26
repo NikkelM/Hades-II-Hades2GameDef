@@ -1,122 +1,113 @@
 ---@meta game-base
 local game = {}
 
----@class game-base*bit32
+game._VERSION = "Lua 5.2"
+---@alias game-engine._VERSION ...
 
----@type game-base*bit32
-game.bit32 = {}
----@alias game-base.bit32 ...
+game._G = game
+---@alias game-engine._G ...
 
----@class game-base*coroutine
-
----@type game-base*coroutine
-game.coroutine = {}
+game.coroutine = coroutine
 ---@alias game-base.coroutine ...
 
----@class game-base*debug
-
----@type game-base*debug
-game.debug = {}
+game.debug = debug
 ---@alias game-base.debug ...
 
----@class game-base*io
-
----@type game-base*io
-game.io = {}
+game.io = io
 ---@alias game-base.io ...
 
----@class game-base*luabins
-
----@type game-base*luabins
-game.luabins = {}
----@alias game-base.luabins ...
-
----@class game-base*math
-
----@type game-base*math
-game.math = {}
+game.math = math
 ---@alias game-base.math ...
 
----@class game-base*memory
-
----@type game-base*memory
-game.memory = {}
----@alias game-base.memory ...
-
----@class game-base*os
-
----@type game-base*os
-game.os = {}
+game.os = os
 ---@alias game-base.os ...
 
----@class game-base*package
-
----@type game-base*package
-game.package = {}
+game.package = package
 ---@alias game-base.package ...
 
----@class game-base*rom
-
----@type game-base*rom
-game.rom = {}
----@alias game-base.rom ...
-
----@class game-base*string
-
----@type game-base*string
-game.string = {}
+game.string = string
 ---@alias game-base.string ...
 
----@class game-base*table
-
----@type game-base*table
-game.table = {}
+game.table = table
 ---@alias game-base.table ...
 
----@class game-base*utf8
-
----@type game-base*utf8
-game.utf8 = {}
+game.utf8 = utf8
 ---@alias game-base.utf8 ...
 
-function game.assert(...) end
+game.assert = assert
 ---@alias game-base.assert ...
 
-function game.collectgarbage(...) end
+game.collectgarbage = collectgarbage
 ---@alias game-base.collectgarbage ...
+
+game.dofile = dofile
+---@alias game-base.dofile ...
+
+game.error = error
+---@alias game-base.error ...
+
+game.getmetatable = getmetatable
+---@alias game-base.getmetatable ...
+
+game.ipairs = ipairs
+---@alias game-base.ipairs ...
+
+game.load = load
+---@alias game-base.load ...
+
+game.loadfile = loadfile
+---@alias game-base.loadfile ...
+
+game.next = next
+---@alias game-base.next ...
+
+game.pairs = pairs
+---@alias game-base.pairs ...
+
+game.pcall = pcall
+---@alias game-base.pcall ...
+
+game.print = print
+---@alias game-base.print ...
+
+game.rawequal = rawequal
+---@alias game-base.rawequal ...
+
+game.rawget = rawget
+---@alias game-base.rawget ...
+
+game.rawlen = rawlen
+---@alias game-base.rawlen ...
+
+game.rawset = rawset
+---@alias game-base.rawset ...
+
+game.require = require
+---@alias game-base.require ...
+
+game.select = select
+---@alias game-base.select ...
+
+game.setmetatable = setmetatable
+---@alias game-base.setmetatable ...
+
+game.tonumber = tonumber
+---@alias game-base.tonumber ...
+
+game.tostring = tostring
+---@alias game-base.tostring ...
+
+game.type = type
+---@alias game-base.type ...
+
+game.xpcall = xpcall
+---@alias game-base.xpcall ...
+
+function game.utf8strlen(...) end
+---@alias game-base.utf8strlen ...
 
 function game.debugprint(...) end
 ---@alias game-base.debugprint ...
-
-function game.dofile(...) end
----@alias game-base.dofile ...
-
-function game.error(...) end
----@alias game-base.error ...
-
-function game.getmetatable(...) end
----@alias game-base.getmetatable ...
-
-function game.ipairs(...) end
----@alias game-base.ipairs ...
-
-function game.load(...) end
----@alias game-base.load ...
-
-function game.loadfile(...) end
----@alias game-base.loadfile ...
-
-function game.next(...) end
----@alias game-base.next ...
-
-function game.pairs(...) end
----@alias game-base.pairs ...
-
-function game.pcall(...) end
----@alias game-base.pcall ...
-
-function game.print(...) end
----@alias game-base.print ...
 
 function game.random(...) end
 ---@alias game-base.random ...
@@ -130,40 +121,39 @@ function game.randomint(...) end
 function game.randomseed(...) end
 ---@alias game-base.randomseed ...
 
-function game.rawequal(...) end
----@alias game-base.rawequal ...
+---TODO: bit32 module docs
+---@class game-base*bit32
 
-function game.rawget(...) end
----@alias game-base.rawget ...
+---@type game-base*bit32
+game.bit32 = ...
+---@alias game-base.bit32 ...
 
-function game.rawlen(...) end
----@alias game-base.rawlen ...
+---TODO: memory module docs
+---@class game-base*memory
 
-function game.rawset(...) end
----@alias game-base.rawset ...
+---@type game-base*memory
+game.memory = ...
+---@alias game-base.memory ...
 
-function game.require(...) end
----@alias game-base.require ...
+---@alias game-base*luabins-valid nil|boolean|number|string|table
 
-function game.select(...) end
----@alias game-base.select ...
+---@class game-base*luabins
+---@field public save fun(...: game-base*luabins-valid): binary: string?, error: string?
+---@field public load fun(binary: string): status: true|nil, result_or_error: game-base*luabins-valid?, ...: game-base*luabins-valid
 
-function game.setmetatable(...) end
----@alias game-base.setmetatable ...
+---@type game-base*luabins
+game.luabins = ...
+---@alias game-base.luabins ...
 
-function game.tonumber(...) end
----@alias game-base.tonumber ...
+---@param ... game-base*luabins-valid
+---@return string? result
+---@return string? error
+function game.luabins.save(...) end
 
-function game.tostring(...) end
----@alias game-base.tostring ...
-
-function game.type(...) end
----@alias game-base.type ...
-
-function game.utf8strlen(...) end
----@alias game-base.utf8strlen ...
-
-function game.xpcall(...) end
----@alias game-base.xpcall ...
+---@param binary string
+---@return true? status
+---@return game-base*luabins-valid? result_or_error
+---@return game-base*luabins-valid ...
+function game.luabins.load(binary) end
 
 return game

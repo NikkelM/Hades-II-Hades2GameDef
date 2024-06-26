@@ -4,7 +4,7 @@ local game = {}
 ---@class game-Scripts-KeywordData*KeywordList
 
 ---@type game-Scripts-KeywordData*KeywordList
-game.KeywordList = {}
+game.KeywordList = ...
 ---@alias game-Scripts-KeywordData.KeywordList ...
 
 return game
