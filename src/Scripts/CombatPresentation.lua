@@ -4,7 +4,7 @@ local game = {}
 ---@class game-Scripts-CombatPresentation*PolymorphPresentationData
 
 ---@type game-Scripts-CombatPresentation*PolymorphPresentationData
-game.PolymorphPresentationData = {}
+game.PolymorphPresentationData = ...
 ---@alias game-Scripts-CombatPresentation.PolymorphPresentationData ...
 
 function game.ActivateFusePresentation(a) end

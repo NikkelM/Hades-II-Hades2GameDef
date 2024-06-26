@@ -7,7 +7,7 @@ game.RoomThreadName = "RoomThread"
 ---@class game-Scripts-RoomLogic*SessionState
 
 ---@type game-Scripts-RoomLogic*SessionState
-game.SessionState = {}
+game.SessionState = ...
 ---@alias game-Scripts-RoomLogic.SessionState ...
 
 function game.ActivateDumbFireWeapons(a, b) end
