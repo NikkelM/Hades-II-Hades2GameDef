@@ -1,5 +1,5 @@
 name: Release
-run-name: ${{ format('{0} {1}', inputs.is-dry-run && 'Dry-run' || 'Release', inputs.tag) }}
+run-name: ${{ format('{0} {1}', ((inputs.is-dry-run && 'Dry-run') || inputs.is-github-release-only-run && 'GitHub Release') || 'Release', inputs.tag) }}
 
 on:
   workflow_dispatch:
@@ -10,19 +10,23 @@ on:
       is-dry-run:
         description: "Dry-run (do not publish, only test build)"
         type: boolean
+        default: true
+      is-github-release-only-run:
+        description: "Release to GitHub only (do not upload to Thunderstore). Do not tick Dry-run for this to work"
+        type: boolean
+        default: true
 
 permissions:
   contents: write # required for pushing to the repository and creating releases
 
 env:
-  changelog: CHANGELOG.md
   thunderstore-config: thunderstore.toml
-  build-dir: build/
+  build-dir: build
   artifact-content-type: application/zip
 
 jobs:
   release:
-    name: ${{ format('{0} {1}', inputs.is-dry-run && 'Dry-run' || 'Release', inputs.tag) }}
+    name: ${{ format('{0} {1}', ((inputs.is-dry-run && 'Dry-run') || inputs.is-github-release-only-run && 'GitHub Release') || 'Release', inputs.tag) }}
     runs-on: ubuntu-latest
     steps:
       - name: Check input tag format
@@ -37,28 +41,12 @@ jobs:
         with:
           lfs: true
 
-      - name: Rotate unreleased section in changelog
-        uses: thomaseizinger/keep-a-changelog-new-release@77ac767b2f7f6edf2ee72ab3364ed26667086f96
-        with:
-          tag: ${{ inputs.tag }}
-
       - name: Rotate version in Thunderstore CLI config
         run: |
           sed -i 's/versionNumber = ".*"/versionNumber = "${{ inputs.tag }}"/' ${{ env.thunderstore-config }}
 
       - name: Install Thunderstore CLI
         run: dotnet tool install -g tcli
-
-      - name: Set up Python
-        uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d
-        with:
-          python-version: 3.12
-
-      - name: Do the thing
-        run: |
-          cd src/
-          python merge_defs.py
-          rm -rf Scripts base.lua engine.lua load.lua
 
       - name: Build package
         run: |
@@ -75,7 +63,7 @@ jobs:
           retention-days: 1
 
       - name: Publish package
-        if: ${{ !inputs.is-dry-run }}
+        if: ${{ !inputs.is-dry-run && !inputs.is-github-release-only-run }}
         env:
           TCLI_AUTH_TOKEN: ${{ secrets.TCLI_AUTH_TOKEN }}
         run: tcli publish --file ${{ env.artifact-path }}
@@ -85,10 +73,20 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add ${{ env.changelog }} ${{ env.thunderstore-config }}
+          git add ${{ env.thunderstore-config }}
           git commit --message "Release ${{ inputs.tag }}"
-          git tag ${{ inputs.tag }}
+          git tag ${{ inputs.tag }} --annotate --message "Release ${{ inputs.tag }}"
           git push origin HEAD:${{ github.ref_name }} --tags
+
+      - name: Create Release notes
+        run: |
+          echo "## What's Changed
+          
+          " > RELEASE_NOTES.md
+          sed -n '/<!--Releasenotes start-->/,/<!--Releasenotes end-->/p' CHANGELOG.md >> RELEASE_NOTES.md
+          echo "
+
+          **[Full Changelog](CHANGELOG.md)**" >> RELEASE_NOTES.md
 
       - name: Create release
         id: release
@@ -97,6 +95,7 @@ jobs:
         with:
           release_name: ${{ inputs.tag }}
           tag_name: ${{ inputs.tag }}
+          body_path: RELEASE_NOTES.md
           commitish: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
