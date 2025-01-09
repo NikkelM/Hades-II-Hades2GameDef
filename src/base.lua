@@ -1,6 +1,9 @@
 ---@meta game-base
 local game = {}
 
+---@class game-Scripts-*BaseData : game-Scripts-*BaseData
+---@field [string] any
+
 game._VERSION = "Lua 5.2"
 ---@alias game-engine._VERSION ...
 
@@ -104,32 +107,38 @@ game.xpcall = xpcall
 ---@alias game-base.xpcall ...
 
 function game.utf8strlen(...) end
+
 ---@alias game-base.utf8strlen ...
 
 function game.debugprint(...) end
+
 ---@alias game-base.debugprint ...
 
 function game.random(...) end
+
 ---@alias game-base.random ...
 
 function game.randomgaussian(...) end
+
 ---@alias game-base.randomgaussian ...
 
 function game.randomint(...) end
+
 ---@alias game-base.randomint ...
 
 function game.randomseed(...) end
+
 ---@alias game-base.randomseed ...
 
 ---TODO: bit32 module docs
----@class game-base*bit32
+---@class game-base*bit32 : game-Scripts-*BaseData
 
 ---@type game-base*bit32
 game.bit32 = ...
 ---@alias game-base.bit32 ...
 
 ---TODO: memory module docs
----@class game-base*memory
+---@class game-base*memory : game-Scripts-*BaseData
 
 ---@type game-base*memory
 game.memory = ...
@@ -137,7 +146,7 @@ game.memory = ...
 
 ---@alias game-base*luabins-valid nil|boolean|number|string|table
 
----@class game-base*luabins
+---@class game-base*luabins : game-Scripts-*BaseData
 ---@field public save fun(...: game-base*luabins-valid): binary: string?, error: string?
 ---@field public load fun(binary: string): status: true|nil, result_or_error: game-base*luabins-valid?, ...: game-base*luabins-valid
 

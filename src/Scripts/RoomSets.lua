@@ -1,109 +1,109 @@
 ---@meta game-Scripts-RoomSets
 local game = {}
 
----@class game-Scripts-RoomSets*BountyData
+---@class game-Scripts-RoomSets*BountyData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*BountyData
 game.BountyData = ...
 ---@alias game-Scripts-RoomSets.BountyData ...
 
----@class game-Scripts-RoomSets*EnemyData
+---@class game-Scripts-RoomSets*EnemyData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*EnemyData
 game.EnemyData = ...
 ---@alias game-Scripts-RoomSets.EnemyData ...
 
----@class game-Scripts-RoomSets*EnemyUpgradeData
+---@class game-Scripts-RoomSets*EnemyUpgradeData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*EnemyUpgradeData
 game.EnemyUpgradeData = ...
 ---@alias game-Scripts-RoomSets.EnemyUpgradeData ...
 
----@class game-Scripts-RoomSets*FieldLootData
+---@class game-Scripts-RoomSets*FieldLootData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*FieldLootData
 game.FieldLootData = ...
 ---@alias game-Scripts-RoomSets.FieldLootData ...
 
----@class game-Scripts-RoomSets*GameData
+---@class game-Scripts-RoomSets*GameData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*GameData
 game.GameData = ...
 ---@alias game-Scripts-RoomSets.GameData ...
 
----@class game-Scripts-RoomSets*Icons
+---@class game-Scripts-RoomSets*Icons : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*Icons
 game.Icons = ...
 ---@alias game-Scripts-RoomSets.Icons ...
 
----@class game-Scripts-RoomSets*Keywords
+---@class game-Scripts-RoomSets*Keywords : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*Keywords
 game.Keywords = ...
 ---@alias game-Scripts-RoomSets.Keywords ...
 
----@class game-Scripts-RoomSets*LootData
+---@class game-Scripts-RoomSets*LootData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*LootData
 game.LootData = ...
 ---@alias game-Scripts-RoomSets.LootData ...
 
----@class game-Scripts-RoomSets*LootSetData
+---@class game-Scripts-RoomSets*LootSetData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*LootSetData
 game.LootSetData = ...
 ---@alias game-Scripts-RoomSets.LootSetData ...
 
----@class game-Scripts-RoomSets*RoomData
+---@class game-Scripts-RoomSets*RoomData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*RoomData
 game.RoomData = ...
 ---@alias game-Scripts-RoomSets.RoomData ...
 
----@class game-Scripts-RoomSets*RoomSetData
+---@class game-Scripts-RoomSets*RoomSetData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*RoomSetData
 game.RoomSetData = ...
 ---@alias game-Scripts-RoomSets.RoomSetData ...
 
----@class game-Scripts-RoomSets*RoomSets
+---@class game-Scripts-RoomSets*RoomSets : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*RoomSets
 game.RoomSets = ...
 ---@alias game-Scripts-RoomSets.RoomSets ...
 
----@class game-Scripts-RoomSets*ScreenData
+---@class game-Scripts-RoomSets*ScreenData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*ScreenData
 game.ScreenData = ...
 ---@alias game-Scripts-RoomSets.ScreenData ...
 
----@class game-Scripts-RoomSets*TraitData
+---@class game-Scripts-RoomSets*TraitData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*TraitData
 game.TraitData = ...
 ---@alias game-Scripts-RoomSets.TraitData ...
 
----@class game-Scripts-RoomSets*TraitSetData
+---@class game-Scripts-RoomSets*TraitSetData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*TraitSetData
 game.TraitSetData = ...
 ---@alias game-Scripts-RoomSets.TraitSetData ...
 
----@class game-Scripts-RoomSets*UnitSetData
+---@class game-Scripts-RoomSets*UnitSetData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*UnitSetData
 game.UnitSetData = ...
 ---@alias game-Scripts-RoomSets.UnitSetData ...
 
----@class game-Scripts-RoomSets*VariantSetData
+---@class game-Scripts-RoomSets*VariantSetData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*VariantSetData
 game.VariantSetData = ...
 ---@alias game-Scripts-RoomSets.VariantSetData ...
 
----@class game-Scripts-RoomSets*WeaponDataEnemies
+---@class game-Scripts-RoomSets*WeaponDataEnemies : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-RoomSets*WeaponDataEnemies
 game.WeaponDataEnemies = ...

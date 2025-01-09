@@ -21,121 +21,121 @@ game.ScreenScaleX = 1
 game.ScreenScaleY = 1
 ---@alias game-load.ScreenScaleY ...
 
----@class game-load*_threadStack
+---@class game-load*_threadStack : game-Scripts-*BaseData
 
 ---@type game-load*_threadStack
 game._threadStack = ...
 ---@alias game-load._threadStack ...
 
----@class game-load*ActiveScreens
+---@class game-load*ActiveScreens : game-Scripts-*BaseData
 
 ---@type game-load*ActiveScreens
 game.ActiveScreens = ...
 ---@alias game-load.ActiveScreens ...
 
----@class game-load*CodexStatus
+---@class game-load*CodexStatus : game-Scripts-*BaseData
 
 ---@type game-load*CodexStatus
 game.CodexStatus = ...
 ---@alias game-load.CodexStatus ...
 
----@class game-load*ConfigOptionCache
+---@class game-load*ConfigOptionCache : game-Scripts-*BaseData
 
 ---@type game-load*ConfigOptionCache
 game.ConfigOptionCache = ...
 ---@alias game-load.ConfigOptionCache ...
 
----@class game-load*CurrentHubRoom
+---@class game-load*CurrentHubRoom : game-Scripts-*BaseData
 
 ---@type game-load*CurrentHubRoom
 game.CurrentHubRoom = ...
 ---@alias game-load.CurrentHubRoom ...
 
----@class game-load*CurrentRun
+---@class game-load*CurrentRun : game-Scripts-*BaseData
 
 ---@type game-load*CurrentRun
 game.CurrentRun = ...
 ---@alias game-load.CurrentRun ...
 
----@class game-load*DeferredObstacleInitialization
+---@class game-load*DeferredObstacleInitialization : game-Scripts-*BaseData
 
 ---@type game-load*DeferredObstacleInitialization
 game.DeferredObstacleInitialization = ...
 ---@alias game-load.DeferredObstacleInitialization ...
 
----@class game-load*EnemyHealthDisplayAnchors
+---@class game-load*EnemyHealthDisplayAnchors : game-Scripts-*BaseData
 
 ---@type game-load*EnemyHealthDisplayAnchors
 game.EnemyHealthDisplayAnchors = ...
 ---@alias game-load.EnemyHealthDisplayAnchors ...
 
----@class game-load*GamepadCursorRequests
+---@class game-load*GamepadCursorRequests : game-Scripts-*BaseData
 
 ---@type game-load*GamepadCursorRequests
 game.GamepadCursorRequests = ...
 ---@alias game-load.GamepadCursorRequests ...
 
----@class game-load*GameState
+---@class game-load*GameState : game-Scripts-*BaseData
 
 ---@type game-load*GameState
 game.GameState = ...
 ---@alias game-load.GameState ...
 
----@class game-load*global_triggerArgs
+---@class game-load*global_triggerArgs : game-Scripts-*BaseData
 
 ---@type game-load*global_triggerArgs
 game.global_triggerArgs = ...
 ---@alias game-load.global_triggerArgs ...
 
----@class game-load*MapState
+---@class game-load*MapState : game-Scripts-*BaseData
 
 ---@type game-load*MapState
 game.MapState = ...
 ---@alias game-load.MapState ...
 
----@class game-load*NextSeeds
+---@class game-load*NextSeeds : game-Scripts-*BaseData
 
 ---@type game-load*NextSeeds
 game.NextSeeds = ...
 ---@alias game-load.NextSeeds ...
 
----@class game-load*PrevRun
+---@class game-load*PrevRun : game-Scripts-*BaseData
 
 ---@type game-load*PrevRun
 game.PrevRun = ...
 ---@alias game-load.PrevRun ...
 
----@class game-load*QueuedTextLines
+---@class game-load*QueuedTextLines : game-Scripts-*BaseData
 
 ---@type game-load*QueuedTextLines
 game.QueuedTextLines = ...
 ---@alias game-load.QueuedTextLines ...
 
----@class game-load*ScreenAnchors
+---@class game-load*ScreenAnchors : game-Scripts-*BaseData
 
 ---@type game-load*ScreenAnchors
 game.ScreenAnchors = ...
 ---@alias game-load.ScreenAnchors ...
 
----@class game-load*ScreenPresentationData
+---@class game-load*ScreenPresentationData : game-Scripts-*BaseData
 
 ---@type game-load*ScreenPresentationData
 game.ScreenPresentationData = ...
 ---@alias game-load.ScreenPresentationData ...
 
----@class game-load*ScreenState
+---@class game-load*ScreenState : game-Scripts-*BaseData
 
 ---@type game-load*ScreenState
 game.ScreenState = ...
 ---@alias game-load.ScreenState ...
 
----@class game-load*SessionMapState
+---@class game-load*SessionMapState : game-Scripts-*BaseData
 
 ---@type game-load*SessionMapState
 game.SessionMapState = ...
 ---@alias game-load.SessionMapState ...
 
----@class game-load*UIScriptsDeferred
+---@class game-load*UIScriptsDeferred : game-Scripts-*BaseData
 
 ---@type game-load*UIScriptsDeferred
 game.UIScriptsDeferred = ...

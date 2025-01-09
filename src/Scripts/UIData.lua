@@ -13,73 +13,73 @@ game.ScreenHeight = 1080
 game.ScreenWidth = 1920
 ---@alias game-Scripts-UIData.ScreenWidth ...
 
----@class game-Scripts-UIData*AutomaticExtractProperties
+---@class game-Scripts-UIData*AutomaticExtractProperties : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*AutomaticExtractProperties
 game.AutomaticExtractProperties = ...
 ---@alias game-Scripts-UIData.AutomaticExtractProperties ...
 
----@class game-Scripts-UIData*CombatControlsDefaults
+---@class game-Scripts-UIData*CombatControlsDefaults : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*CombatControlsDefaults
 game.CombatControlsDefaults = ...
 ---@alias game-Scripts-UIData.CombatControlsDefaults ...
 
----@class game-Scripts-UIData*CombatUI
+---@class game-Scripts-UIData*CombatUI : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*CombatUI
 game.CombatUI = ...
 ---@alias game-Scripts-UIData.CombatUI ...
 
----@class game-Scripts-UIData*ConstantsData
+---@class game-Scripts-UIData*ConstantsData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*ConstantsData
 game.ConstantsData = ...
 ---@alias game-Scripts-UIData.ConstantsData ...
 
----@class game-Scripts-UIData*GamepadNavigationDefaults
+---@class game-Scripts-UIData*GamepadNavigationDefaults : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*GamepadNavigationDefaults
 game.GamepadNavigationDefaults = ...
 ---@alias game-Scripts-UIData.GamepadNavigationDefaults ...
 
----@class game-Scripts-UIData*HealthUI
+---@class game-Scripts-UIData*HealthUI : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*HealthUI
 game.HealthUI = ...
 ---@alias game-Scripts-UIData.HealthUI ...
 
----@class game-Scripts-UIData*IconData
+---@class game-Scripts-UIData*IconData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*IconData
 game.IconData = ...
 ---@alias game-Scripts-UIData.IconData ...
 
----@class game-Scripts-UIData*PercentFormatNamesLookup
+---@class game-Scripts-UIData*PercentFormatNamesLookup : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*PercentFormatNamesLookup
 game.PercentFormatNamesLookup = ...
 ---@alias game-Scripts-UIData.PercentFormatNamesLookup ...
 
----@class game-Scripts-UIData*RunIntroData
+---@class game-Scripts-UIData*RunIntroData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*RunIntroData
 game.RunIntroData = ...
 ---@alias game-Scripts-UIData.RunIntroData ...
 
----@class game-Scripts-UIData*ShopUI
+---@class game-Scripts-UIData*ShopUI : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*ShopUI
 game.ShopUI = ...
 ---@alias game-Scripts-UIData.ShopUI ...
 
----@class game-Scripts-UIData*TextFormats
+---@class game-Scripts-UIData*TextFormats : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*TextFormats
 game.TextFormats = ...
 ---@alias game-Scripts-UIData.TextFormats ...
 
----@class game-Scripts-UIData*UIData
+---@class game-Scripts-UIData*UIData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-UIData*UIData
 game.UIData = ...

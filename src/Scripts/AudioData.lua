@@ -4,49 +4,49 @@ local game = {}
 game.GossipSubtitlesMinDistance = 1200
 ---@alias game-Scripts-AudioData.GossipSubtitlesMinDistance ...
 
----@class game-Scripts-AudioData*CombatOverMusicEvents
+---@class game-Scripts-AudioData*CombatOverMusicEvents : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-AudioData*CombatOverMusicEvents
 game.CombatOverMusicEvents = ...
 ---@alias game-Scripts-AudioData.CombatOverMusicEvents ...
 
----@class game-Scripts-AudioData*GlobalVoiceLines
+---@class game-Scripts-AudioData*GlobalVoiceLines : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-AudioData*GlobalVoiceLines
 game.GlobalVoiceLines = ...
 ---@alias game-Scripts-AudioData.GlobalVoiceLines ...
 
----@class game-Scripts-AudioData*MusicMarkerData
+---@class game-Scripts-AudioData*MusicMarkerData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-AudioData*MusicMarkerData
 game.MusicMarkerData = ...
 ---@alias game-Scripts-AudioData.MusicMarkerData ...
 
----@class game-Scripts-AudioData*MusicPlayerTrackData
+---@class game-Scripts-AudioData*MusicPlayerTrackData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-AudioData*MusicPlayerTrackData
 game.MusicPlayerTrackData = ...
 ---@alias game-Scripts-AudioData.MusicPlayerTrackData ...
 
----@class game-Scripts-AudioData*MusicPlayerTrackOrderData
+---@class game-Scripts-AudioData*MusicPlayerTrackOrderData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-AudioData*MusicPlayerTrackOrderData
 game.MusicPlayerTrackOrderData = ...
 ---@alias game-Scripts-AudioData.MusicPlayerTrackOrderData ...
 
----@class game-Scripts-AudioData*MusicTrackData
+---@class game-Scripts-AudioData*MusicTrackData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-AudioData*MusicTrackData
 game.MusicTrackData = ...
 ---@alias game-Scripts-AudioData.MusicTrackData ...
 
----@class game-Scripts-AudioData*PresetAudioArgs
+---@class game-Scripts-AudioData*PresetAudioArgs : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-AudioData*PresetAudioArgs
 game.PresetAudioArgs = ...
 ---@alias game-Scripts-AudioData.PresetAudioArgs ...
 
----@class game-Scripts-AudioData*RoomStartMusicEvents
+---@class game-Scripts-AudioData*RoomStartMusicEvents : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-AudioData*RoomStartMusicEvents
 game.RoomStartMusicEvents = ...

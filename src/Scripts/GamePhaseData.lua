@@ -1,7 +1,7 @@
 ---@meta game-Scripts-GamePhaseData
 local game = {}
 
----@class game-Scripts-GamePhaseData*GamePhaseData
+---@class game-Scripts-GamePhaseData*GamePhaseData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-GamePhaseData*GamePhaseData
 game.GamePhaseData = ...

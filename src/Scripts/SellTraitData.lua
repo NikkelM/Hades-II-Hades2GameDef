@@ -1,7 +1,7 @@
 ---@meta game-Scripts-SellTraitData
 local game = {}
 
----@class game-Scripts-SellTraitData*SellTraitData
+---@class game-Scripts-SellTraitData*SellTraitData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-SellTraitData*SellTraitData
 game.SellTraitData = ...

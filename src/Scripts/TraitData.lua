@@ -1,55 +1,55 @@
 ---@meta game-Scripts-TraitData
 local game = {}
 
----@class game-Scripts-TraitData*LinkedTraitData
+---@class game-Scripts-TraitData*LinkedTraitData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-TraitData*LinkedTraitData
 game.LinkedTraitData = ...
 ---@alias game-Scripts-TraitData.LinkedTraitData ...
 
----@class game-Scripts-TraitData*PersistentTraitKeys
+---@class game-Scripts-TraitData*PersistentTraitKeys : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-TraitData*PersistentTraitKeys
 game.PersistentTraitKeys = ...
 ---@alias game-Scripts-TraitData.PersistentTraitKeys ...
 
----@class game-Scripts-TraitData*ProjectileThingPropertyNames
+---@class game-Scripts-TraitData*ProjectileThingPropertyNames : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-TraitData*ProjectileThingPropertyNames
 game.ProjectileThingPropertyNames = ...
 ---@alias game-Scripts-TraitData.ProjectileThingPropertyNames ...
 
----@class game-Scripts-TraitData*PropertyOrderingValues
+---@class game-Scripts-TraitData*PropertyOrderingValues : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-TraitData*PropertyOrderingValues
 game.PropertyOrderingValues = ...
 ---@alias game-Scripts-TraitData.PropertyOrderingValues ...
 
----@class game-Scripts-TraitData*TraitElementData
+---@class game-Scripts-TraitData*TraitElementData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-TraitData*TraitElementData
 game.TraitElementData = ...
 ---@alias game-Scripts-TraitData.TraitElementData ...
 
----@class game-Scripts-TraitData*TraitMainWeaponSlots
+---@class game-Scripts-TraitData*TraitMainWeaponSlots : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-TraitData*TraitMainWeaponSlots
 game.TraitMainWeaponSlots = ...
 ---@alias game-Scripts-TraitData.TraitMainWeaponSlots ...
 
----@class game-Scripts-TraitData*TraitMultiplierData
+---@class game-Scripts-TraitData*TraitMultiplierData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-TraitData*TraitMultiplierData
 game.TraitMultiplierData = ...
 ---@alias game-Scripts-TraitData.TraitMultiplierData ...
 
----@class game-Scripts-TraitData*TraitRarityData
+---@class game-Scripts-TraitData*TraitRarityData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-TraitData*TraitRarityData
 game.TraitRarityData = ...
 ---@alias game-Scripts-TraitData.TraitRarityData ...
 
----@class game-Scripts-TraitData*TraitRequirements
+---@class game-Scripts-TraitData*TraitRequirements : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-TraitData*TraitRequirements
 game.TraitRequirements = ...

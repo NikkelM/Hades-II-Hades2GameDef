@@ -1,7 +1,7 @@
 ---@meta game-Scripts-NarrativeData
 local game = {}
 
----@class game-Scripts-NarrativeData*NarrativeData
+---@class game-Scripts-NarrativeData*NarrativeData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-NarrativeData*NarrativeData
 game.NarrativeData = ...

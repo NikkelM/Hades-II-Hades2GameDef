@@ -1,7 +1,7 @@
 ---@meta game-Scripts-GardenData
 local game = {}
 
----@class game-Scripts-GardenData*GardenData
+---@class game-Scripts-GardenData*GardenData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-GardenData*GardenData
 game.GardenData = ...

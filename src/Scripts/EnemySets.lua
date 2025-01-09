@@ -1,7 +1,7 @@
 ---@meta game-Scripts-EnemySets
 local game = {}
 
----@class game-Scripts-EnemySets*EnemySets
+---@class game-Scripts-EnemySets*EnemySets : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-EnemySets*EnemySets
 game.EnemySets = ...

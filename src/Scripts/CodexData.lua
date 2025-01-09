@@ -1,7 +1,7 @@
 ---@meta game-Scripts-CodexData
 local game = {}
 
----@class game-Scripts-CodexData*CodexData
+---@class game-Scripts-CodexData*CodexData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-CodexData*CodexData
 game.CodexData = ...

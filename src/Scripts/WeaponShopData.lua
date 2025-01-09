@@ -1,7 +1,7 @@
 ---@meta game-Scripts-WeaponShopData
 local game = {}
 
----@class game-Scripts-WeaponShopData*WeaponShopItemData
+---@class game-Scripts-WeaponShopData*WeaponShopItemData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-WeaponShopData*WeaponShopItemData
 game.WeaponShopItemData = ...

@@ -1,7 +1,7 @@
 ---@meta game-Scripts-LocalizationData
 local game = {}
 
----@class game-Scripts-LocalizationData*LocalizationData
+---@class game-Scripts-LocalizationData*LocalizationData : game-Scripts-*BaseData : game-Scripts-*BaseData
 
 ---@type game-Scripts-LocalizationData*LocalizationData
 game.LocalizationData = ...
